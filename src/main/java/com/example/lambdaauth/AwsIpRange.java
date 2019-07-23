@@ -1,4 +1,4 @@
-package com.example.test.lambdaauth;
+package com.example.lambdaauth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

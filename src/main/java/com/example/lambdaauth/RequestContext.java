@@ -1,4 +1,4 @@
-package com.example.test.lambdaauth;
+package com.example.lambdaauth;
 
 public class RequestContext {
 

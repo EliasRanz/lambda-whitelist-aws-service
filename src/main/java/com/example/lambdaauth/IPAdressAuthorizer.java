@@ -1,4 +1,4 @@
-package com.example.test.lambdaauth;
+package com.example.lambdaauth;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;

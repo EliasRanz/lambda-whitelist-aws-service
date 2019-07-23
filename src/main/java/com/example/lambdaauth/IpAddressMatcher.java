@@ -1,4 +1,4 @@
-package com.example.test.lambdaauth;
+package com.example.lambdaauth;
 
 /*
  * Copyright 2002-2016 the original author or authors.

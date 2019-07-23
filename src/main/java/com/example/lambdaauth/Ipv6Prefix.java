@@ -1,12 +1,10 @@
-package com.example.test.lambdaauth;
+package com.example.lambdaauth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
 
-@Data
-public class Ipv4Prefix {
-    @JsonProperty("ip_prefix")
-    private String ipPrefix;
+public class Ipv6Prefix {
+    @JsonProperty("ipv6_prefix")
+    private String ipv6Prefix;
     @JsonProperty("region")
     private String region;
     @JsonProperty("service")
