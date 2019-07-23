@@ -1,0 +1,43 @@
+plugins {
+	id 'java'
+	id 'groovy'
+}
+
+group = 'com.example.userlink.lambdaauth'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+ext {
+	groovyVersion = '2.5.7'
+	spockVersion = '1.2-groovy-2.5'
+}
+
+//repositories {
+//	mavenCentral()
+//}
+
+dependencies {
+	implementation 'com.amazonaws:aws-lambda-java-core:1.2.0'
+	implementation 'com.amazonaws:aws-lambda-java-events:2.2.6'
+	implementation 'org.projectlombok:lombok:1.18.8'
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9.1'
+
+	annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
+
+task buildZip(type: Zip) {
+	from compileJava
+	from processResources
+	into('lib') {
+		from configurations.compileClasspath
+	}
+}
+
+build.dependsOn buildZip
