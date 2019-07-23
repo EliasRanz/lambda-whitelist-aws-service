@@ -3,7 +3,7 @@ plugins {
 	id 'groovy'
 }
 
-group = 'com.example.userlink.lambdaauth'
+group = 'com.example.lambdaauth'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 
